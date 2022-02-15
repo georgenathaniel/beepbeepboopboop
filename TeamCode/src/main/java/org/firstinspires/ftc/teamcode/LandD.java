@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp
-public class LandD extends MecanumDrive {
+class Robotcode extends TankDrive {
     private Servo servo;
     private double position;
 
