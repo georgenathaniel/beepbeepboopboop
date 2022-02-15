@@ -15,8 +15,8 @@ public class RobottimeFAST extends TankDrive {
 
     public void loop() {
         super.loop();
-        double extendpower = gamepad1.left_stick_y;
-        double updownpower = gamepad1.right_stick_y;
+        double extendpower = gamepad1.left_trigger;
+        double updownpower = gamepad1.right_trigger;
 
         extend.setPower(extendpower);
         updown.setPower(extendpower);
