@@ -31,15 +31,20 @@ public class RobottimeFAST extends TankDrive {
         if (gamepad1.dpad_left) {
             extendpower = -0.25;
         }
+        else {
+            extendpower = 0;
+        }
 
         updown.setPower(updownpower);
         if (gamepad1.dpad_up) {
-            updownpower = 0.25;
+            updownpower = 0.5;
         }
         if (gamepad1.dpad_down) {
-            updownpower = -0.25;
+            updownpower = -0.5;
         }
-
+        else {
+            updownpower = 0;
+        }
        /* servo.setPosition(position);
         if (gamepad1.a) {
             position -= 0.0005;
